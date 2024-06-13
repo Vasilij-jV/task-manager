@@ -1,0 +1,15 @@
+<!-- task_manager/task_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Мои задачи</h1>
+    {% for task in tasks %}
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+    {% endfor %}
+</body>
+</html>
